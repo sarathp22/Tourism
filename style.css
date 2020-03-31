@@ -1,0 +1,61 @@
+#navbarcolor
+{
+    background-color: lightgreen;
+}
+#signupform
+{
+    border:1px solid blue;
+    padding: 15px;
+    background-color: burlywood;
+}
+#signinborder
+{
+    margin-top: 125px;
+}    
+#signupborder
+{
+    margin-top: 75px;
+}
+body
+{
+    /* background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px; */
+    background-color: lemonchiffon;
+    /* height:5000px; */
+}
+.footer
+{
+    width: 100%;
+    height: 50px;
+    background-color: lightgreen;
+}
+.animate
+{
+    border: 2px solid blue;
+}
+.animate:hover
+{
+    border: 5px solid red;
+    transform: scaleY(1.22);
+}
+h3
+{
+    width: 378px;
+}
+.disth3
+{
+    text-align: center;
+}
+.disth3:hover
+{
+    color:red;
+    text-align: center;
+}
+.head
+{
+    color: mediumvioletred;
+    text-align: center;
+}
