@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+      body
+      {
+        height: 1000px;
+      }
+    </style>
 </head>
 <body>
     <nav id="navbarcolor" class="navbar navbar-expand-lg navbar-light">
@@ -34,49 +40,70 @@
         </div>
       </nav>
 
-      <div class="container" id="signupborder">
+      <div class="container">
           <div class="row" style="display: flex;flex-direction: row;">
               <div class="col-md-4" style=" margin: auto;">
-                  <form action="#" id="signupform" >
+                  <form action="signin.html" class="signupborder" id="signupform" onsubmit="return validate()" name="account">
                       <h1 class="text-center text-primary" style="margin: 0px;">Sign Up</h1>
-                      <fieldset>
+                      <br>
+                      
+                     
                           <div><table><tr>
                                 <td><label for="fname">First Name:</label></td>
-                                <td><input type="text" name="fname" value=""></td></tr> 
-                                
+                                <td><input type="text" name="fname" value="" id="first"></td></tr>   
                           </div>
-                          <div class="pt-2">
+                          <tr><td colspan="2"><p id="val1" class="val"></p></td></tr>
+                          <!-- <div class="pt-2"> -->
+                            
                             <tr><td><label for="lname">Last Name:</label></td>
-                            <td><input type="text" name="lname" value=""></td></tr>
-                          </div>
+                            <td><input type="text" name="lname" value="" id="last"></td></tr>
+                          <!-- </div> -->
+                          <tr><td colspan="2"><p id="val2" class="val"></p></td></tr>
                           <div class="pt-2">
                             <tr><td><label for="username">User Name:</label></td>
-                            <td><input type="text" name="username" value=""></td></tr>
+                            <td><input type="text" name="username" value="" id="user"></td></tr>
                           </div>
-                          <div class="pt-2">
+                          <tr><td colspan="2"><p id="val3" class="val"></p></td></tr>
+                          <!-- <div class="pt-2"> -->
+                            <tr><td><label for="phonenumber">Phone Number:</label></td>
+                            <td><input type="text" name="phonenumber" value="" id="phone"></td></tr>
+                          <!-- </div> -->
+                          <tr><td colspan="2"> <p id="val6" class="val"></p></td></tr>
+                          <!-- <div class="pt-2"> -->
                               <tr><td><label for="email">Email ID:</label></td>
-                              <td><input type="email" name="email" id=""></td></tr>
-                          </div>
-                          <div class="pt-2">
+                              <td><input type="text" name="email" id="email"></td></tr>
+                          <!-- </div> -->
+                          <tr><td colspan="2">  <p id="val4" class="val"></p></td></tr>
+                          <!-- <div class="pt-2"> -->
                               <tr><td><label for="password">Password:</label></td>
-                              <td><input type="password" name="password">
-                          </div></td></tr></table>
-                          <div class="pt-2" mr-5>
-                            <button style="margin-left: 200px;"><a href="signin.html" style="text-decoration: none;">Submit</a></button>
-                          </div>
-                          <div class="pt-2">
-                          <span>If You have an Account</span>
-                            <a href="signin.html" style="text-decoration: none;">Sign In</a>
-                        </div>
-                      </fieldset>
+                              <td><input type="password" name="password" id="pass" onkeypress="data()" onkeydown="data()">
+                          <!-- </div> -->
+                        </td></tr>
+                        <!-- <tr><td></td><td><p id="st" class="val1"></p></td> </tr> -->
+                        <tr><td></td><td><div id="st"></div></td> </tr>
+                          <tr><td colspan="2"><p id="val5" class="val"></p></td></tr>
+                        <tr><td></td><td>
+                          <!-- <div class="pt-2" mr-5> -->
+                            <button style="margin-left: 110px;">Submit</button>
+                          <!-- </div> -->
+                        </td></tr>
+                          <!-- <div class="pt-2"> -->
+                            <tr>
+                          <td colspan="2"><span>If You have an Account</span>
+                            <a href="signin.html" style="text-decoration: none;margin-left: 70px;">LogIn</a>
+                        <!-- </div> -->
+                      </td></tr>
+                      
                   </form>
+                </table>
               </div>
           </div>
       </div>
-
+      
 
       <div class="footer fixed-bottom">
         <h6 class="text-primary text-center mt-3">Copyright @ 2020 Sarath P creations</h6>
       </div>
+      <script src="signup.js"></script>
 </body>
 </html>

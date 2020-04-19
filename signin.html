@@ -37,32 +37,37 @@
     <div class="container" id="signinborder" style="width: auto;">
         <div class="row" style="display: flex;flex-direction: row;" >
             <div class="col-md-4" style=" margin: auto;">
-                <form action="#" id="signupform" >
-                    <h1 class="text-center text-primary">Sign In</h1>
+                <form action="home.html" id="signupform"  onsubmit="return login()">
+                    <h1 class="text-center text-primary">Login</h1>
                     <fieldset>
                         
-                        <div class="pt-2">
-                          <table><tr><td>
+                        <!-- <div class="pt-2"> -->
+                          <table ><tr><td>
                             <label for="username">User Name:</label></td>
-                            <form action="home.html"></form>
-                            <td><input type="text" name="username" value=""></td></tr>
-                        </div>
-                        <div class="pt-2">
+                            <!-- <form action="home.html"></form> -->
+                            <td><input type="text" name="username" value="" id="name1"></td></tr>
+                        <!-- </div> -->
+                        <tr><td colspan="2"><p id="x1" class="val"></p></td></tr>
+                        <!-- <div class="pt-2"> -->
                             <tr><td>
                             <label for="password">Password:</label></td>
-                            <td><input type="password" name="password"></td></tr>
-                        </div></td></tr></table>
-                        <div class="pt-2" mr-5>
-                            <tr><td>
-                           <button style="margin-left: 200px;"><a href="home.html" style="text-decoration: none;">Submit</a></button>
+                            <td><input type="password" name="password" id="pass1"></td></tr>
+                        <!-- </div></td></tr> -->
+                        <tr><td colspan="2"><p id="y1" class="val"></p></td></tr>
+                        <!-- <div class="pt-2" mr-5> -->
+                            <tr><td colspan="2">
+                           <button style="margin-left: 200px;">Submit</button></td></tr>
                             </form>
-                          </div>
-                        <div class="pt-2">
-                            <span>If You have no Account</span>
-                            <a href="signup.html" style="text-decoration: none;">Create Account</a>
-                        </div>
+                          <!-- </div> -->
+                        <!-- <div class="pt-2"> -->
+                            <tr><td colspan="2"><span>If You have no Account</span>
+                            <a href="signup.html" style="text-decoration: none;">Create Account</a></td></tr>
+                        <!-- </div> -->
+                      </table>
                     </fieldset>
                 </form>
+                <br>
+                <!-- <div><p id="demo">Demo username:sar123 pass:ABCabc123</p></div> -->
             </div>
         </div>
     </div>
@@ -71,5 +76,6 @@
     <div class="footer fixed-bottom">
       <h6 class="text-primary text-center mt-3">Copyright @ 2020 Sarath P creations</h6>
     </div>
+    <script src="signup.js" ></script>
 </body>
 </html>

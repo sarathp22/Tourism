@@ -12,7 +12,7 @@
 {
     margin-top: 125px;
 }    
-#signupborder
+.signupborder
 {
     margin-top: 75px;
 }
@@ -59,3 +59,40 @@ h3
     color: mediumvioletred;
     text-align: center;
 }
+.val
+{
+    color: red;
+    text-align: center;
+}
+.val1
+{
+    text-align: center;
+}
+#demo
+{
+    background-color: rgb(0, 2, 128);
+    color: honeydew;
+    text-align: center;
+}
+
+
+
+
+
+
+.container1 {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    text-align: center; /* Right-align text */
+    padding-top: 1px; /* Add top padding */
+    padding-bottom: 1px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+  .poor {width: 30%; background-color:red;} 
+  .medium {width: 60%; background-color:orange;}
+  .strong {width: 100%; background-color:rgb(1, 92, 1);}
+  * {box-sizing:border-box}
